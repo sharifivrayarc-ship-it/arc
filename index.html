@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html class="scroll-smooth dark" dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Saeed Sharifi — Architect</title>
+  <meta name="description" content="Saeed Sharifi — Independent Architect in Tehran. Designing spaces through material, light, form, and atmosphere.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..700;1,300..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#121110",
+            "surface-dim": "#0f0e0d",
+            "surface-bright": "#3b3834",
+            "surface-container-lowest": "#0c0b0a",
+            "surface-container-low": "#161513",
+            "surface-container": "#1c1b18",
+            "surface-container-high": "#2a2825",
+            "surface-container-highest": "#36332f",
+            "surface-variant": "#22201d",
+            "on-surface": "#f5f3ef",
+            "on-surface-variant": "#a39e93",
+            "primary": "#f1d5b0",
+            "primary-container": "#d4b996",
+            "on-primary": "#121110",
+            "secondary": "#d4b996",
+            "secondary-container": "#26221d",
+            "on-secondary": "#412c10",
+            "outline": "#7d756b",
+            "outline-variant": "#33302b"
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "2rem",
+            "space-xl": "3.5rem",
+            "space-2xl": "6rem",
+            "gutter": "2rem",
+            "margin": "4rem",
+            "margin-tablet": "2.5rem",
+            "margin-mobile": "1.25rem"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-secondary min-h-screen relative pointer-events-auto">
+  <!-- STICKY TOP HEADER -->
+  <header class="fixed top-0 inset-x-0 z-40 bg-surface/90 backdrop-blur-md border-b border-outline-variant/60 transition-all duration-300 pointer-events-auto">
+    <div class="h-20 w-full px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between">
+      <a class="flex flex-col group cursor-pointer" href="#hero">
+        <span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface transition-colors group-hover:text-secondary">SAEED SHARIFI</span>
+        <span class="font-label-meta text-label-meta text-on-surface-variant tracking-wider">TEHRAN — ARCHITECT</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-space-lg">
+        <a class="nav-link font-label-caps text-label-caps uppercase transition-colors pb-0.5 text-primary font-medium border-b border-primary cursor-pointer" href="#projects">WORK</a>
+        <a class="nav-link font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors pb-0.5 cursor-pointer" href="#about">ABOUT</a>
+        <a class="nav-link font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors pb-0.5 cursor-pointer" href="#expertise">EXPERTISE</a>
+        <a class="nav-link font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors pb-0.5 cursor-pointer" href="#contact">CONTACT</a>
+      </nav>
+      <div class="flex items-center gap-space-md">
+        <div class="flex items-center border border-outline-variant/80 bg-surface-container px-space-xs py-0.5 rounded-sm">
+          <button class="px-space-sm font-label-caps text-label-caps hover:text-primary transition-colors text-on-surface-variant cursor-pointer py-1" id="lang-btn-en" type="button">EN</button>
+          <span class="text-outline-variant text-[10px] select-none">|</span>
+          <button class="px-space-sm font-label-caps text-label-caps hover:text-primary transition-colors font-bold text-primary cursor-pointer py-1" id="lang-btn-fa" type="button">FA</button>
+        </div>
+        <a class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer hover:bg-secondary transition-colors" href="#contact" title="Contact Saeed Sharifi">
+          <span class="material-symbols-outlined text-surface text-[18px]">person</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-20 bg-surface min-h-screen relative pointer-events-auto">
+    <div class="flex flex-col w-full text-on-surface fa-font" data-current-lang="fa" id="portfolio-root">
+      
+      <!-- HERO SECTION -->
+      <section class="relative w-full px-margin-mobile md:px-margin-tablet lg:px-margin pb-space-2xl pt-space-xl flex flex-col justify-between min-h-[85vh] bg-surface" id="hero">
+        <div class="w-full flex items-center justify-between pb-space-md border-b border-outline-variant/60">
+          <div class="flex items-center gap-space-sm">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span class="font-label-meta text-label-meta tracking-widest text-on-surface-variant uppercase" data-i18n="hero-coords">۳۵.۶۸۹۲° شمالی، ۵۱.۳۸۹۰° شرقی — تهران، ایران</span>
+          </div>
+          <div class="hidden sm:flex items-center gap-space-md font-label-caps text-label-caps tracking-widest text-secondary">
+            <span data-i18n="hero-spec">دفتر معماری</span>
+            <span>/</span>
+            <span data-i18n="hero-status">پذیرش پروژه‌های جدید ۱۴۰۴–۱۴۰۵</span>
+          </div>
+        </div>
+
+        <div class="my-auto py-space-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+          <div class="lg:col-span-8 flex flex-col gap-space-md">
+            <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase" data-i18n="hero-subtitle">سعید شریفی — معمار | تهران</span>
+            <h1 class="font-display-hero text-headline-xl sm:text-display-hero leading-[1.1] text-primary tracking-tight font-normal" data-i18n="hero-statement">طراحی فضا با رویکردی مبتنی بر متریال، نور، فرم و اتمسفر.</h1>
+          </div>
+          <div class="lg:col-span-4 flex flex-col items-start lg:items-end justify-end gap-space-md">
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-sm lg:text-right" data-i18n="hero-desc">ریشه‌دار در هویت کالبدی و مصالح معاصر ایرانی همگام با نظم فضایی جهان‌شمول. دقت تکتونیک در ستایش تراورتن ناب، بازی سایه‌ها و آرامش تأمل‌برانگیز.</p>
+            <a class="nav-link inline-flex items-center gap-space-sm px-space-lg py-space-md bg-primary text-surface font-label-caps text-label-caps tracking-widest uppercase hover:bg-secondary transition-colors duration-300 cursor-pointer font-medium" href="#projects">
+              <span data-i18n="hero-cta">مشاهده آثار برگزیده</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative w-full h-[55vh] md:h-[68vh] overflow-hidden bg-surface-container-high border border-outline-variant/40 group">
+          <img alt="Saeed Sharifi Architecture Niavaran Residence" class="w-full h-full object-cover grayscale contrast-[1.1] group-hover:scale-[1.015] transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9UYN10XrdrqUF0dCff_k3H859QPuOoOBu52s2Ytc4ODrMkjPMqdXOTv8klqYlCzZOK-yPWQuCsJlp3rlTxm9SH0SvFC4MhpkDlB_dyDA1UCtOvgn8BqFEOu7ymVWvVGY07d1XYS7os-AXbq8Yd3ukNGUv0zQ-LSDdfiNIPCrTrOP4uGjigPI0RQgV9ZjU_XVPVSbcosSyO4t2baQtUoMJyxH5q7AXcPIzcReKesk">
+          <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8 bg-surface/90 backdrop-blur-md px-space-md py-space-sm border border-outline-variant/60 flex items-center gap-space-md">
+            <span class="font-label-caps text-label-caps text-primary tracking-widest" data-i18n="hero-img-badge">تصویر ۰۱ — پوسته مونولیت مسکونی (نیاوران)</span>
+            <span class="text-secondary font-label-meta text-label-meta">2024</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 02 — SELECTED PROJECTS -->
+      <section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-2xl bg-surface-container-lowest border-t border-outline-variant/60" id="projects">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg pb-space-xl border-b border-outline-variant/60">
+          <div>
+            <span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase" data-i18n="filter-index">فهرست ۰۱ / نمونه آثار</span>
+            <h2 class="font-headline-xl text-headline-xl text-primary mt-space-xs" data-i18n="projects-heading">آثار برگزیده</h2>
+          </div>
+          <div class="flex flex-wrap items-center gap-space-xs" id="filter-container">
+            <button class="filter-btn active-filter px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-wider bg-primary text-surface border border-primary transition-all duration-200 cursor-pointer font-medium" data-filter="all" data-i18n="filter-all" type="button">همه پروژه‌ها (۰۶)</button>
+            <button class="filter-btn px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-wider bg-surface-container text-on-surface border border-outline-variant/60 hover:border-secondary hover:text-primary transition-all duration-200 cursor-pointer" data-filter="exterior" data-i18n="filter-exterior" type="button">معماری بیرونی</button>
+            <button class="filter-btn px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-wider bg-surface-container text-on-surface border border-outline-variant/60 hover:border-secondary hover:text-primary transition-all duration-200 cursor-pointer" data-filter="interior" data-i18n="filter-interior" type="button">معماری داخلی</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter pt-space-xl" id="projects-grid">
+          <!-- Project 01 -->
+          <article class="project-card group cursor-pointer flex flex-col bg-surface-container border border-outline-variant/50 hover:border-secondary/70 transition-all duration-300" data-category="exterior" data-project-id="1">
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+              <img alt="Niavaran Travertine Residence" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNJB5o9zjYwRdCdYIPbAtpkNHW1jM5DZmJMGaccI_r2rggZfcDul-6cC33-453Qpfbws9tonuj8DkBgO1JJQJvVQ2DRPhy4hL6jLKLgNe_9DecKBSbGZjj1_CU5ODdFwKaMkM6zKzEsm4A42wT5f92zz-0TdXfut7kDc3gTRfjlSOSrhNR7pa_L65hstsYws4FQhF3ChPsos38LHCiXuPqTWf9oGAFSl3zagJKi-g">
+              <span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 font-label-caps text-label-caps text-primary border border-outline-variant/50 tracking-widest">01</span>
+            </div>
+            <div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+              <div>
+                <div class="flex items-center justify-between font-label-meta text-label-meta text-secondary mb-space-xs">
+                  <span data-i18n="proj1-type">معماری بیرونی</span>
+                  <span>2024 / TEHRAN</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors" data-i18n="proj1-title">اقامتگاه تراورتن نیاوران</h3>
+              </div>
+              <div class="pt-space-sm border-t border-outline-variant/50 flex items-center justify-between text-secondary font-label-meta text-label-meta">
+                <span data-i18n="proj1-area">۱,۸۵۰ مترمربع — مسکونی</span>
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform">arrow_forward</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card group cursor-pointer flex flex-col bg-surface-container border border-outline-variant/50 hover:border-secondary/70 transition-all duration-300" data-category="interior" data-project-id="2">
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+              <img alt="Zaferanieh Penthouse Gallery" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBFKqbpftTSpd7YRDXQObAJZiuNGG6ZeKqUNMAeYe06StLmmyeYAAWYSyinnh5KqH4bMBxlh8AL5Td1YcsvBCtrbSUaRgFnBBeRbi5LqFYzvzz269rIv0F-bokLp5I4_dD_RiTN9tFFqhKdibXTTn8UEJ-MW6MWD7ai2xxUm-azTpVTbHD27psnXzuqm7Da-I6c7DqPH1g_D4VT5tqSDYV-xA3ilyEKbyt_4iaR2E">
+              <span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 font-label-caps text-label-caps text-primary border border-outline-variant/50 tracking-widest">02</span>
+            </div>
+            <div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+              <div>
+                <div class="flex items-center justify-between font-label-meta text-label-meta text-secondary mb-space-xs">
+                  <span data-i18n="proj2-type">معماری داخلی</span>
+                  <span>2024 / TEHRAN</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors" data-i18n="proj2-title">پنت‌هاوس گالری زعفرانیه</h3>
+              </div>
+              <div class="pt-space-sm border-t border-outline-variant/50 flex items-center justify-between text-secondary font-label-meta text-label-meta">
+                <span data-i18n="proj2-area">۵۴۰ مترمربع — پنت‌هاوس</span>
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform">arrow_forward</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card group cursor-pointer flex flex-col bg-surface-container border border-outline-variant/50 hover:border-secondary/70 transition-all duration-300" data-category="exterior" data-project-id="3">
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+              <img alt="Lavasan Monolith Villa" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC52lcIBCHkbF868XAXibj9gRWkQHtQP7pZVBe_YQSwBDndzWZder3lJJgSYYcdaC1-We9ejHfXGzAtSwozxTbUkYs7nySN8nOgjjVzcKWY7rZys7e97ai6bIXmK9dz1aFcVwdVfJnY5q0VeWht_hJE9uxWZGIBdHlNW3e3OjUBM314a6waJe1xGZvkSmjXFDg38cRX9syd0Vz2ZK-HiPINQ6SfLNd5rQ5vZpjY3_Q">
+              <span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 font-label-caps text-label-caps text-primary border border-outline-variant/50 tracking-widest">03</span>
+            </div>
+            <div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+              <div>
+                <div class="flex items-center justify-between font-label-meta text-label-meta text-secondary mb-space-xs">
+                  <span data-i18n="proj3-type">معماری بیرونی</span>
+                  <span>2023 / LAVASAN</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors" data-i18n="proj3-title">ویلای مونولیت لواسان</h3>
+              </div>
+              <div class="pt-space-sm border-t border-outline-variant/50 flex items-center justify-between text-secondary font-label-meta text-label-meta">
+                <span data-i18n="proj3-area">۹۲۰ مترمربع — ویلایی</span>
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform">arrow_forward</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card group cursor-pointer flex flex-col bg-surface-container border border-outline-variant/50 hover:border-secondary/70 transition-all duration-300" data-category="interior" data-project-id="4">
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+              <img alt="Elahieh Minimalist Studio" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ9NnOOTphDK7l27WZfTxHT4-OtZYAQkxS8AeIEais8NQccURW9Y_uwpwmOjxeQoYEZ6xgqTz7YOZRdBV6Edy7wC26n3UJ-z6VjXLaBRWm0_ZQen6JF6ZzKsn-Q82f8--Uq4NiixG5PssrJu-cOTVUYPo6s2Fgty3J8tK3t2fmoQpnBzP7N5u_93FZxqkqWwlRxS-plAAnCyqVCAv-NzOl4qDetJUTIKOySDdDYMo">
+              <span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 font-label-caps text-label-caps text-primary border border-outline-variant/50 tracking-widest">04</span>
+            </div>
+            <div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+              <div>
+                <div class="flex items-center justify-between font-label-meta text-label-meta text-secondary mb-space-xs">
+                  <span data-i18n="proj4-type">معماری داخلی</span>
+                  <span>2023 / TEHRAN</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors" data-i18n="proj4-title">استودیو مینیمال الهیه</h3>
+              </div>
+              <div class="pt-space-sm border-t border-outline-variant/50 flex items-center justify-between text-secondary font-label-meta text-label-meta">
+                <span data-i18n="proj4-area">۲۸۰ مترمربع — آتلیه</span>
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform">arrow_forward</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 05 -->
+          <article class="project-card group cursor-pointer flex flex-col bg-surface-container border border-outline-variant/50 hover:border-secondary/70 transition-all duration-300" data-category="exterior" data-project-id="5">
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+              <img alt="Darrous Courtyard Pavilion" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUU-vkdkgjRddlJAhfn5O4z3_ft5NwBuE20qlCOXKjF3EBNAVqvIiearae7HqWhivC1eaXWvZu5ZE_T8xl1vZW4-ZER85clqYcl4wES2cvDxDH1wIyPmI0UMYKD3zHOngO30Wi--6w7KAII8QE7G3WSHm5-SYDRZzbCAVnUs_ai0asupQNXYfH8-7Z5vwxH3mpdeJz3ZJ-2IRoTEnL52SOa28A88KTLZitJ3AHadA">
+              <span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 font-label-caps text-label-caps text-primary border border-outline-variant/50 tracking-widest">05</span>
+            </div>
+            <div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+              <div>
+                <div class="flex items-center justify-between font-label-meta text-label-meta text-secondary mb-space-xs">
+                  <span data-i18n="proj5-type">معماری بیرونی</span>
+                  <span>2022 / TEHRAN</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors" data-i18n="proj5-title">پاویون حیاط دروس</h3>
+              </div>
+              <div class="pt-space-sm border-t border-outline-variant/50 flex items-center justify-between text-secondary font-label-meta text-label-meta">
+                <span data-i18n="proj5-area">۱,۲۰۰ مترمربع — مسکونی</span>
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform">arrow_forward</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 06 -->
+          <article class="project-card group cursor-pointer flex flex-col bg-surface-container border border-outline-variant/50 hover:border-secondary/70 transition-all duration-300" data-category="interior" data-project-id="6">
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+              <img alt="Faris Tactile Apartment" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9HG1Gx71ZEU52YrgcpVIGP5pObEa4ouhJPoNklHyutvQKSJ8_AsRsIBACBE7eoItq1ZJUsvYbPH0ZhrFiZQ9sJsVnFPfEweGZeABztZwil5KMHpt8oqmC5loaxUYUQU9LMzCzMeiVlvGegCjWz_FpIo9z2IF__br2nntf6Je2yF2EbOJBzWDdng89Pcgu1NAUWfaYQhMt1sbf5cdisoSUdkIOO-puDT5ufwtyi4g">
+              <span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 font-label-caps text-label-caps text-primary border border-outline-variant/50 tracking-widest">06</span>
+            </div>
+            <div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+              <div>
+                <div class="flex items-center justify-between font-label-meta text-label-meta text-secondary mb-space-xs">
+                  <span data-i18n="proj6-type">معماری داخلی</span>
+                  <span>2022 / TEHRAN</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors" data-i18n="proj6-title">آپارتمان ملموس فارس</h3>
+              </div>
+              <div class="pt-space-sm border-t border-outline-variant/50 flex items-center justify-between text-secondary font-label-meta text-label-meta">
+                <span data-i18n="proj6-area">۳۴۰ مترمربع — مسکونی</span>
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform">arrow_forward</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 03 — ABOUT SAEED -->
+      <section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-2xl bg-surface border-t border-outline-variant/60" id="about">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+          <div class="lg:col-span-5 flex flex-col gap-space-md">
+            <div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container border border-outline-variant/60">
+              <img alt="Saeed Sharifi Architect Portrait" class="w-full h-full object-cover filter grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVtbCLni5n37xhlrd3ePoVv_oWT-lJp1k3bevzqO2jG-5I6LKFYksNzXOP9Iae2zAROSzncX5WeTNIzbX8r36-Znztf0UYmBcevH2Ob5riKnIc67-rl6vqrl0zU-EgwZxIITDlBAwzT6HXDDsU0hNi4nHeTVyz5vW2Qon-xsJchIhvjY-jsoS5pjtQjJdSlmgeZd5jW1CGfOP9xKtaBKbdDkHkmlvLglrrRr5M90H91NrgvwGBXt7rI9nc5oOmhVVdWn3Wpqyur3BvQQ">
+              <div class="absolute bottom-3 left-3 bg-surface/95 px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest text-primary border border-outline-variant/60">
+                SAEED SHARIFI / ARCHITECT
+              </div>
+            </div>
+            <div class="p-space-md bg-surface-container border border-outline-variant/50 flex flex-col gap-space-xs font-label-meta text-label-meta text-on-surface-variant">
+              <div class="flex justify-between border-b border-outline-variant/40 pb-1">
+                <span data-i18n="spec-practice">حیطه فعالیت:</span>
+                <span class="text-primary font-medium" data-i18n="spec-practice-val">معمار مستقل</span>
+              </div>
+              <div class="flex justify-between border-b border-outline-variant/40 py-1">
+                <span data-i18n="spec-location">موقعیت:</span>
+                <span class="text-primary font-medium" data-i18n="spec-location-val">تهران، ایران</span>
+              </div>
+              <div class="flex justify-between pt-1">
+                <span data-i18n="spec-focus">تمرکز:</span>
+                <span class="text-primary font-medium" data-i18n="spec-focus-val">اقامتگاه‌های اختصاصی و مونوگراف کالبدی</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 flex flex-col gap-space-xl lg:pl-space-md">
+            <div>
+              <span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase" data-i18n="about-pretitle">پرتره و رویکرد</span>
+              <h2 class="font-headline-xl text-headline-xl text-primary mt-space-xs" data-i18n="about-title">درباره سعید</h2>
+            </div>
+            <p class="font-headline-sm text-headline-sm text-on-surface font-normal leading-relaxed border-l-2 rtl:border-l-0 rtl:border-r-2 border-primary pl-space-md rtl:pl-0 rtl:pr-space-md" data-i18n="about-quote">«من سعید شریفی، معمار مستقل مستقر در تهران هستم. رویکرد طراحی من بر ارتباط میان فضاهای داخلی و خارجی با تأکید بر متریال، نور، فرم و بیان معاصر معماری متمرکز است.»</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg pt-space-md border-t border-outline-variant/60">
+              <div class="flex flex-col gap-space-xs">
+                <span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider" data-i18n="bio-academic-title">پیشینه آکادمیک</span>
+                <h4 class="font-headline-sm text-[1.125rem] text-primary" data-i18n="bio-academic-sub">دانش کالبدی و نظریه معماری</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant" data-i18n="bio-academic-p">شکل‌گرفته بر بستر آموزش‌های تخصصی معماری در تهران، با تلفیق سنت‌های فضایی اصیل همچون حیاط مرکزی و آجرچینی با مینیمالیسم پالوده بین‌المللی.</p>
+              </div>
+              <div class="flex flex-col gap-space-xs">
+                <span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider" data-i18n="bio-milestones-title">نقاط عطف حرفه‌ای</span>
+                <h4 class="font-headline-sm text-[1.125rem] text-primary" data-i18n="bio-milestones-sub">استقلال تکتونیکی</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant" data-i18n="bio-milestones-p">بیش از یک دهه خلق فضاهای متمایز در شمیرانات، الهیه و لواسان. التزام به پروژه‌های محدود و کیفی با تعامل پیوسته کارفرما برای خلق بناهایی دیرپا.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-space-md pt-space-lg border-t border-outline-variant/60">
+              <div class="flex flex-col">
+                <span class="font-headline-lg text-headline-lg text-primary">10+</span>
+                <span class="font-label-meta text-label-meta text-secondary uppercase" data-i18n="metric-years">سال سابقه مستقل</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-headline-lg text-headline-lg text-primary">28</span>
+                <span class="font-label-meta text-label-meta text-secondary uppercase" data-i18n="metric-projects">پروژه و مونوگراف</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-headline-lg text-headline-lg text-primary">100%</span>
+                <span class="font-label-meta text-label-meta text-secondary uppercase" data-i18n="metric-bespoke">طراحی اختصاصی</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 04 — DESIGN APPROACH & EXPERTISE -->
+      <section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-2xl bg-surface-container-low border-t border-outline-variant/60" id="expertise">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-xl border-b border-outline-variant/60">
+          <div>
+            <span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase" data-i18n="expertise-pretitle">روش‌شناسی</span>
+            <h2 class="font-headline-xl text-headline-xl text-primary mt-space-xs" data-i18n="expertise-heading">رویکرد طراحی و تخصص</h2>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-md" data-i18n="expertise-lead">معماری افزوده‌ای تزئینی نیست؛ بلکه پالایش فیزیکی حجم، جریان نور روز و پیراستگی فضایی است.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter pt-space-xl pb-space-2xl border-b border-outline-variant/60">
+          <div class="flex flex-col gap-space-sm p-space-lg bg-surface-container border border-outline-variant/50">
+            <span class="font-label-caps text-label-caps text-secondary">01 / DISCIPLINE</span>
+            <h3 class="font-headline-md text-headline-md text-primary" data-i18n="pillar1-title">توالی و پیوستگی فضایی</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant" data-i18n="pillar1-desc">تنظیم گذارهای سلسله‌مراتبی میان فضاهای عمومی و خلوتگاه‌های خصوصی با شکوه مرزها از طریق راهروهای فشرده و گشایش‌های دوطبقه.</p>
+          </div>
+          <div class="flex flex-col gap-space-sm p-space-lg bg-surface-container border border-outline-variant/50">
+            <span class="font-label-caps text-label-caps text-secondary">02 / MATERIALITY</span>
+            <h3 class="font-headline-md text-headline-md text-primary" data-i18n="pillar2-title">حس ملموس مصالح بروز</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant" data-i18n="pillar2-desc">انتخاب آگاهانه سنگ‌های طبیعی، تراورتن متخلخل، بتن عریان، چوب بلوط دودی ایرانی و فولاد مات که با وقار گذر زمان را بازتاب می‌دهند.</p>
+          </div>
+          <div class="flex flex-col gap-space-sm p-space-lg bg-surface-container border border-outline-variant/50">
+            <span class="font-label-caps text-label-caps text-secondary">03 / CHOREOGRAPHY</span>
+            <h3 class="font-headline-md text-headline-md text-primary" data-i18n="pillar3-title">کارگردانی نور</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant" data-i18n="pillar3-desc">رام کردن زوایای تند آفتاب تهران از طریق گشودگی‌های عمیق، شکاف‌های سقفی باریک و لوورهای سنگی برای نقاشی سایه‌ها بر اندام فضا.</p>
+          </div>
+          <div class="flex flex-col gap-space-sm p-space-lg bg-surface-container border border-outline-variant/50">
+            <span class="font-label-caps text-label-caps text-secondary">04 / DIALOGUE</span>
+            <h3 class="font-headline-md text-headline-md text-primary" data-i18n="pillar4-title">گفتگوی بافتاری</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant" data-i18n="pillar4-desc">احترام به دانه و دانه‌بندی شهری محلات، خطوط افق البرز و شرایط اقلیمی همگام با ایستایی محکم در موضعی نوگرایانه.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter pt-space-xl">
+          <div class="lg:col-span-6 flex flex-col gap-space-md">
+            <span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase" data-i18n="disc-heading">زمینه‌های تخصصی</span>
+            <div class="flex flex-col divide-y divide-outline-variant/50 border-y border-outline-variant/50">
+              <div class="py-space-md flex items-center justify-between">
+                <span class="font-headline-sm text-headline-sm text-primary" data-i18n="disc-1">معماری و طراحی داخلی</span>
+                <span class="font-label-meta text-label-meta text-secondary" data-i18n="disc-1-sub">طراحی اجزای ثابت، نورپردازی و سیالیت حرکت</span>
+              </div>
+              <div class="py-space-md flex items-center justify-between">
+                <span class="font-headline-sm text-headline-sm text-primary" data-i18n="disc-2">معماری بیرونی و کالبدی</span>
+                <span class="font-label-meta text-label-meta text-secondary" data-i18n="disc-2-sub">طراحی نماهای تکتونیک، حجم و جرم سازه‌ای</span>
+              </div>
+              <div class="py-space-md flex items-center justify-between">
+                <span class="font-headline-sm text-headline-sm text-primary" data-i18n="disc-3">فرم‌یابی مفهومی</span>
+                <span class="font-label-meta text-label-meta text-secondary" data-i18n="disc-3-sub">اتودهای پارامتریک و مطالعات فرمی اولیه</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 flex flex-col gap-space-md">
+            <span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase" data-i18n="tools-heading">تخصص فنی و ابزارهای دیجیتال</span>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-space-xs" data-i18n="tools-desc">محاسبات پیشرفته دیجیتال در خدمت حقیقت کالبدی بنا؛ ترسیمات دقیق اجرایی BIM، هماهنگی سازه و شبیه‌سازی واقع‌گرایانه اتمسفر فضا.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+              <div class="p-space-md bg-surface-container border border-outline-variant/60 flex flex-col justify-between">
+                <span class="font-headline-sm text-headline-sm text-primary">3ds Max</span>
+                <span class="font-label-meta text-label-meta text-secondary mt-space-xs" data-i18n="tool-3ds">مدل‌سازی سه‌بعدی</span>
+              </div>
+              <div class="p-space-md bg-surface-container border border-outline-variant/60 flex flex-col justify-between">
+                <span class="font-headline-sm text-headline-sm text-primary">AutoCAD</span>
+                <span class="font-label-meta text-label-meta text-secondary mt-space-xs" data-i18n="tool-cad">ترسیم و جزئیات فاز ۲</span>
+              </div>
+              <div class="p-space-md bg-surface-container border border-outline-variant/60 flex flex-col justify-between">
+                <span class="font-headline-sm text-headline-sm text-primary">V-Ray</span>
+                <span class="font-label-meta text-label-meta text-secondary mt-space-xs" data-i18n="tool-vray">محاسبه تابش نور</span>
+              </div>
+              <div class="p-space-md bg-surface-container border border-outline-variant/60 flex flex-col justify-between">
+                <span class="font-headline-sm text-headline-sm text-primary">Photoshop</span>
+                <span class="font-label-meta text-label-meta text-secondary mt-space-xs" data-i18n="tool-ps">پردازش و پست‌پرو</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 05 — CONTACT & INQUIRIES -->
+      <section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-2xl bg-surface border-t border-outline-variant/60" id="contact">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+          <div class="lg:col-span-5 flex flex-col justify-between gap-space-xl">
+            <div>
+              <span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase" data-i18n="contact-pretitle">همکاری و سفارش طراحی</span>
+              <h2 class="font-headline-xl text-headline-xl text-primary mt-space-xs" data-i18n="contact-title">همکاری و ارتباط</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-space-md max-w-md" data-i18n="contact-subtitle">برای پروژه‌های معماری، همکاری‌های حرفه‌ای و طرح پرسش‌های فنی، خوشحال می‌شویم در تماس باشید. پذیرای کارفرمایان خصوصی و دفاتر همکار هستیم.</p>
+            </div>
+
+            <div class="flex flex-col gap-space-md border-t border-outline-variant/60 pt-space-lg">
+              <a class="group flex items-center justify-between p-space-md bg-surface-container border border-outline-variant/50 hover:border-secondary transition-all cursor-pointer" href="tel:09386544597">
+                <div class="flex items-center gap-space-md">
+                  <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">call</span>
+                  <div class="flex flex-col">
+                    <span class="font-label-meta text-label-meta text-secondary uppercase" data-i18n="contact-phone-lbl">خط مستقیم / واتس‌اپ</span>
+                    <span class="font-headline-sm text-[1.125rem] text-on-surface" dir="ltr">0938 654 4597</span>
+                  </div>
+                </div>
+                <span class="font-label-caps text-label-caps text-secondary group-hover:text-primary tracking-widest" data-i18n="cta-call">تماس</span>
+              </a>
+
+              <a class="group flex items-center justify-between p-space-md bg-surface-container border border-outline-variant/50 hover:border-secondary transition-all cursor-pointer" href="mailto:saeed.sharifi.m17@gmail.com">
+                <div class="flex items-center gap-space-md">
+                  <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">mail</span>
+                  <div class="flex flex-col">
+                    <span class="font-label-meta text-label-meta text-secondary uppercase" data-i18n="contact-email-lbl">پست الکترونیک</span>
+                    <span class="font-body-md text-on-surface font-medium">saeed.sharifi.m17@gmail.com</span>
+                  </div>
+                </div>
+                <span class="font-label-caps text-label-caps text-secondary group-hover:text-primary tracking-widest" data-i18n="cta-email">ارسال ایمیل</span>
+              </a>
+
+              <a class="group flex items-center justify-between p-space-md bg-surface-container border border-outline-variant/50 hover:border-secondary transition-all cursor-pointer" href="https://www.instagram.com/saeed.sharifi.com/" rel="noopener noreferrer" target="_blank">
+                <div class="flex items-center gap-space-md">
+                  <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">photo_camera</span>
+                  <div class="flex flex-col">
+                    <span class="font-label-meta text-label-meta text-secondary uppercase" data-i18n="contact-insta-lbl">صفحه اینستاگرام</span>
+                    <span class="font-body-md text-on-surface font-medium">@saeed.sharifi.com</span>
+                  </div>
+                </div>
+                <span class="font-label-caps text-label-caps text-secondary group-hover:text-primary tracking-widest" data-i18n="cta-view">دنبال کنید</span>
+              </a>
+
+              <a class="group flex items-center justify-between p-space-md bg-surface-container border border-outline-variant/50 hover:border-secondary transition-all cursor-pointer" href="https://www.3dsharifi.com/" rel="noopener noreferrer" target="_blank">
+                <div class="flex items-center gap-space-md">
+                  <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">language</span>
+                  <div class="flex flex-col">
+                    <span class="font-label-meta text-label-meta text-secondary uppercase" data-i18n="contact-web-lbl">درگاه اینترنتی و آتلیه سه‌بعدی</span>
+                    <span class="font-body-md text-on-surface font-medium">www.3dsharifi.com</span>
+                  </div>
+                </div>
+                <span class="font-label-caps text-label-caps text-secondary group-hover:text-primary tracking-widest" data-i18n="cta-visit">مشاهده</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Architectural Inquiry Form -->
+          <div class="lg:col-span-7 bg-surface-container-low p-space-lg md:p-space-xl border border-outline-variant/60 flex flex-col justify-between">
+            <div>
+              <span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-space-sm block" data-i18n="form-heading">فرم درخواست همکاری معماری</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg" data-i18n="form-desc">مشخصات اولیه پروژه خود را وارد فرمایید. کارشناسان آتلیه ظرف دو روز کاری با شما تماس خواهند گرفت.</p>
+            </div>
+            <form class="flex flex-col gap-space-md" id="contact-form" onsubmit="event.preventDefault(); window.handleContactSubmit();">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <label class="font-label-caps text-label-caps uppercase text-secondary" data-i18n="lbl-name" for="form-name">نام و نام خانوادگی *</label>
+                  <input class="w-full bg-surface-container border border-outline-variant/70 px-space-md py-space-sm font-body-md text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-secondary transition-colors" id="form-name" placeholder="e.g. Alireza Rad" required="" type="text">
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="font-label-caps text-label-caps uppercase text-secondary" data-i18n="lbl-email" for="form-email">آدرس ایمیل *</label>
+                  <input class="w-full bg-surface-container border border-outline-variant/70 px-space-md py-space-sm font-body-md text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-secondary transition-colors" id="form-email" placeholder="name@domain.com" required="" type="email">
+                </div>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label class="font-label-caps text-label-caps uppercase text-secondary" data-i18n="lbl-typology" for="form-typology">گونه‌شناسی پروژه</label>
+                <select class="w-full bg-surface-container border border-outline-variant/70 px-space-md py-space-sm font-body-md text-on-surface focus:outline-none focus:border-secondary transition-colors cursor-pointer" id="form-typology">
+                  <option class="bg-surface-container text-on-surface" data-i18n="opt-res" value="Residential Architecture">معماری مسکونی (ویلا / آپارتمان شاخص)</option>
+                  <option class="bg-surface-container text-on-surface" data-i18n="opt-int" value="Interior Architecture">معماری و طراحی داخلی و بازآفرینی فضا</option>
+                  <option class="bg-surface-container text-on-surface" data-i18n="opt-com" value="Commercial & Gallery">پروژه‌های تجاری و پاویون‌های نمایشگاهی</option>
+                  <option class="bg-surface-container text-on-surface" data-i18n="opt-3d" value="Consultancy & 3D Visualization">مشاوره و شبیه‌سازی تخصصی فضایی سه‌بعدی</option>
+                </select>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label class="font-label-caps text-label-caps uppercase text-secondary" data-i18n="lbl-msg" for="form-message">شرح پروژه، ابعاد و موقعیت مکانی *</label>
+                <textarea class="w-full bg-surface-container border border-outline-variant/70 px-space-md py-space-sm font-body-md text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-secondary transition-colors resize-none" id="form-message" placeholder="Tell us about the site location, approximate area, timeline, and design intent..." required="" rows="4"></textarea>
+              </div>
+              <div class="hidden p-space-md bg-secondary-container text-secondary border border-secondary/40 font-body-sm text-body-sm transition-all" id="form-status"></div>
+              <div class="pt-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+                <span class="font-label-meta text-label-meta text-on-surface-variant" data-i18n="form-confidential">کلیه اطلاعات پروژه طبق اصول محرمانگی استودیو محفوظ خواهد ماند.</span>
+                <button class="px-space-xl py-space-md bg-primary text-surface font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors duration-300 cursor-pointer text-center font-medium" id="form-submit-btn" type="submit">
+                  <span data-i18n="btn-send">ارسال پیام درخواست</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- LIGHTBOX / PROJECT DETAILS MODAL -->
+  <div aria-modal="true" class="fixed inset-0 z-50 hidden opacity-0 pointer-events-none transition-opacity duration-300 bg-black/85 backdrop-blur-md items-center justify-center p-space-md md:p-space-xl" id="project-modal" role="dialog" style="display: none;">
+    <div class="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto bg-surface-container border border-outline-variant/80 shadow-2xl flex flex-col pointer-events-auto">
+      <div class="sticky top-0 z-20 bg-surface/95 backdrop-blur-md px-space-lg py-space-md border-b border-outline-variant/60 flex items-center justify-between">
+        <div class="flex items-center gap-space-md">
+          <span class="font-label-caps text-label-caps text-secondary uppercase" id="modal-project-number">PROJECT 01</span>
+          <span class="text-outline-variant">/</span>
+          <span class="font-label-meta text-label-meta text-primary font-medium uppercase" id="modal-project-typology">EXTERIOR ARCHITECTURE</span>
+        </div>
+        <button aria-label="Close dialog" class="w-9 h-9 flex items-center justify-center border border-outline-variant/80 hover:border-secondary hover:text-primary transition-colors cursor-pointer" onclick="window.closeProjectModal()" type="button">
+          <span class="material-symbols-outlined text-[20px] text-primary">close</span>
+        </button>
+      </div>
+
+      <div class="relative w-full aspect-[16/9] md:aspect-[21/9] bg-surface-container-highest overflow-hidden">
+        <img alt="Project detail view" class="w-full h-full object-cover" id="modal-main-image" src="">
+        <div class="absolute bottom-4 right-4 flex items-center gap-1 bg-surface/90 backdrop-blur-sm p-1 border border-outline-variant/60">
+          <button class="w-8 h-8 flex items-center justify-center hover:bg-surface-container text-on-surface hover:text-primary transition-colors cursor-pointer" onclick="window.cycleModalImage(-1)" title="Previous visual" type="button">
+            <span class="material-symbols-outlined text-[18px]">chevron_left</span>
+          </button>
+          <span class="font-label-meta text-label-meta px-2 text-primary" id="modal-gallery-counter">1 / 3</span>
+          <button class="w-8 h-8 flex items-center justify-center hover:bg-surface-container text-on-surface hover:text-primary transition-colors cursor-pointer" onclick="window.cycleModalImage(1)" title="Next visual" type="button">
+            <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+        <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-space-sm border-b border-outline-variant/60 pb-space-md">
+          <h3 class="font-headline-lg text-headline-lg text-primary" id="modal-project-title">Niavaran Travertine Residence</h3>
+          <span class="font-label-meta text-label-meta text-secondary" id="modal-project-meta">2024 — NIAVARAN, TEHRAN</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+          <div class="md:col-span-7 flex flex-col gap-space-md">
+            <div>
+              <span class="font-label-caps text-label-caps text-secondary uppercase block mb-1" data-i18n="modal-concept-lbl">ایده و کانسپت طراحی</span>
+              <p class="font-body-md text-body-md text-on-surface-variant" id="modal-project-desc"></p>
+            </div>
+            <div>
+              <span class="font-label-caps text-label-caps text-secondary uppercase block mb-1" data-i18n="modal-mat-lbl">مصالح اصلی</span>
+              <p class="font-body-md text-body-md text-on-surface-variant" id="modal-project-materials"></p>
+            </div>
+          </div>
+          <div class="md:col-span-5 bg-surface-container-low p-space-md border border-outline-variant/60 flex flex-col gap-space-xs font-label-meta text-label-meta">
+            <span class="font-label-caps text-label-caps text-secondary uppercase pb-space-xs border-b border-outline-variant/40" data-i18n="modal-specs-lbl">مشخصات فنی پروژه</span>
+            <div class="flex justify-between py-1 border-b border-outline-variant/40">
+              <span data-i18n="spec-area">مساحت زیربنا:</span>
+              <span class="text-primary font-medium" id="modal-spec-area"></span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-outline-variant/40">
+              <span data-i18n="spec-scope">دامنه خدمات:</span>
+              <span class="text-primary font-medium" id="modal-spec-scope"></span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-outline-variant/40">
+              <span data-i18n="spec-typology">گونه پروژه:</span>
+              <span class="text-primary font-medium" id="modal-spec-typology"></span>
+            </div>
+            <div class="flex justify-between pt-1">
+              <span data-i18n="spec-status">وضعیت اجرا:</span>
+              <span class="text-primary font-medium" id="modal-spec-status"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="w-full bg-surface-container-lowest border-t border-outline-variant/60 py-space-xl">
+    <div class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter pb-space-lg border-b border-outline-variant/40">
+        <div class="md:col-span-5 flex flex-col justify-between gap-space-sm">
+          <span class="font-headline-sm text-headline-sm text-primary">SAEED SHARIFI ARCHITECTS</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Spatial composure, tactile masonry, and tectonic precision rooted in contemporary Iranian context and international architectural discourse.</p>
+        </div>
+        <div class="md:col-span-3 flex flex-col gap-space-xs">
+          <span class="font-label-caps text-label-caps text-primary uppercase mb-space-xs">TEHRAN STUDIO</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">No. 14, Shahid Fayyazi St., Elahieh<br>Tehran, Iran</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">studio@saeedsharifi.com<br>+98 (21) 2200 4891</p>
+        </div>
+        <div class="md:col-span-4 flex flex-col justify-between gap-space-md">
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-caps text-label-caps text-primary uppercase mb-space-xs">COMMISSIONS</span>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Open for architectural design, residential monographs, and spatial masterplanning.</p>
+          </div>
+          <div class="flex items-center gap-space-md">
+            <span class="font-label-meta text-label-meta text-secondary">IRAN / TIME (UTC+03:30)</span>
+          </div>
+        </div>
+      </div>
+      <div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-meta text-label-meta text-on-surface-variant">
+        <span>© 2025 SAEED SHARIFI. ALL RIGHTS RESERVED.</span>
+        <span class="uppercase tracking-wider text-secondary">WARM MINIMALISM & ARCHITECTURAL ORDER</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
